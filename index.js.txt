@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 app.post("/webhook", async (req, res) => {
-  const event = req.body.events[0];
+  const event = req.body.events[200];
 
   if (!event || event.type !== "message") return res.sendStatus(200);
 
