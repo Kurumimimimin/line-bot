@@ -64,7 +64,6 @@ app.post("/webhook", async (req, res) => {
     console.log("====== エラー発生 ======");
     console.log(error.response?.data || error.message);
     console.log("======================");
-
     res.sendStatus(500);
   }
 });
